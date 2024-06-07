@@ -1,0 +1,149 @@
+#menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#dishes {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 32px;
+    padding-bottom: 50px;
+   /*  border: solid blue 1px; */
+}
+
+.dish {
+    perspective: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    gap: 18px;
+    padding: 134px;
+    box-shadow: 0px 0px 12px 4px #dacfcf;
+    position: relative;
+    overflow: hidden;
+    margin-inline: 15px;
+    /* border: solid red 1px; */
+}
+
+.dish-front,
+.dish-back{
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12px 4px #dacfcf;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s;
+}
+
+.dish-front {
+    z-index: 2;
+    transform: rotateY(0deg);
+    border: solid rgb(30, 255, 0) 1px;
+
+}
+
+.dish-back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(180deg);
+    border: solid red 1px;
+}
+
+.dish:hover .dish-front {
+    transform: rotateY(-180deg);
+}
+
+.dish:hover .dish-back {
+    transform: rotateY(0deg);
+}
+
+.dish-description {
+    color: #fff;
+    text-align: center;
+}
+
+.dish-price {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* 
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .dish {
+        width: 100%;
+    }
+
+    #menu .section-subtitle {
+        text-align: center;
+    }
+}  */
+
+
+
+@media screen and (max-width: 1170px) {
+    #dishes {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dish {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #dishes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish {
+        width: 80%;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        box-shadow: none;
+        padding: 20px;
+    }
+
+    .dish-front,
+    .dish-back {
+        position: static;
+        transform: none;
+        box-shadow: 0px 0px 12px 4px #dacfcf;
+        backface-visibility: visible;
+        transition: none;
+    }
+
+    .dish:hover .dish-front {
+        transform: none;
+    }
+
+    .dish:hover .dish-back {
+        transform: none;
+    }
+}
