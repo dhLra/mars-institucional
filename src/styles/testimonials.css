@@ -13,8 +13,9 @@
 }
 
 #testimonial_chef_a {
-    width: 500px;
+    /*width: 500px;*/
     /* border: 1px solid red; */
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
