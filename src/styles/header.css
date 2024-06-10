@@ -53,6 +53,12 @@ header {
         display: none;
     }
 
+    #navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     #mobile_btn {
         display: block;
         border: none;
