@@ -116,6 +116,10 @@
     .dish {
         width: calc(50% - 12px);
     }
+
+    .dish-back p{
+        font-size: medium;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -141,6 +145,10 @@
         box-shadow: 0px 0px 12px 4px #dacfcf;
         backface-visibility: visible;
         transition: none;
+    }
+
+    .dish-back  p{
+        font-size: 2pt;
     }
 
     .dish:hover .dish-front {

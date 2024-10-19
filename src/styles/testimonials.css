@@ -7,8 +7,13 @@
     /* border: 1px solid red; */
 }
 
+.social-media-buttons i{
+    color:#fff;
+    font-size: 21pt
+}
+
 #testimonial_chef {
-    width: 500px;
+    width: 300px;
     /*  border: 1px solid red; */
 }
 
@@ -31,7 +36,7 @@
     align-items: center;
     border-radius: 15px;
     padding: 8px;
-    width: 100%;
+    font-size: small;
     border: none;
     /*   border: 1px solid red; */
     color: #fff;

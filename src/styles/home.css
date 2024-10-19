@@ -43,7 +43,7 @@
 }
 
 #cta .description {
-    font-size: 2rem;
+    font-size: 1rem;
     font-weight: 400;
 }
 
@@ -54,12 +54,17 @@
 }
 
 #cta_buttons a {
+    background-color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--color-neutral-1);
-    width: 250px;
+    width: 200px;
     padding: 8px;
     border-radius: 25px;
+}
+
+#cta_buttons a:hover {
+    background-color: #969696;
 }
 
 #phone_button {
@@ -79,11 +84,10 @@
 
 #banner {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: end;
-    width: 47%;
+    width: 50vw;
     z-index: 2;
-    margin-right: 50px;
 }
 
 .contrast{
@@ -91,8 +95,8 @@
 }
 
 #banner img {
-    height: 80%;
-    width: fit-content;
+
+    width: 300px;
 }
 
 .shape {
